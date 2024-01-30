@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Currency Converter</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/x-icon" href="images\favicon.jpeg"> 
+</head>
+<body class="bg-gray-100 min-h-screen flex items-center justify-center">
+
+<div class="converter" id="converter"> 
+  <h2 class="text-2xl font-bold mb-4">Currency Converter</h2>
+
+  <label for="amount" class="block text-sm font-medium text-gray-700 mb-2">Amount</label>
+  <input type="number" id="amount" placeholder="Enter amount" class="input-style mb-4">
+
+  <div class="flex mb-4 select-container">
+    <label for="fromCurrency" class="block text-sm font-medium text-gray-700">From</label>
+    <select id="fromCurrency" class="select-style">
+
+        <option value="INR">INR</option>
+        <option value="USD">USD</option>
+        <option value="EUR">EUR</option>
+        <option value="JPY">JPY</option>
+        <option value="BGN">BGN</option>
+        <option value="CZK">CZK</option>
+        <option value="DKK">DKK</option>
+        <option value="GBP">GBP</option>
+        <option value="HUF">HUF</option>
+        <option value="PLN">PLN</option>
+        <option value="RON">RON</option>
+        <option value="SEK">SEK</option>
+        <option value="ISK">ISK</option>
+        <option value="NOK">NOK</option>
+        <option value="CHF">CHF</option>
+        <option value="HRK">HRK</option>
+        <option value="RUB">RUB</option>
+        <option value="TRY">TRY</option>
+        <option value="AUD">AUD</option>
+        <option value="BRL">BRL</option>
+        <option value="CAD">CAD</option>
+        <option value="CNY">CNY</option>
+        <option value="HKD">HKD</option>
+        <option value="IDR">IDR</option>
+        <option value="ILS">ILS</option>
+        <option value="KRW">KRW</option>
+        <option value="MXN">MXN</option>
+        <option value="MYR">MYR</option>
+        <option value="NZD">NZD</option>
+        <option value="PHP">PHP</option>
+        <option value="SGD">SGD</option>
+        <option value="THB">THB</option>
+        <option value="ZAR">ZAR</option>
+      </select>
+    </div>
+
+<div class="flex mb-4 select-container">
+    <label for="toCurrency" class="block text-sm font-medium text-gray-700">To</label>
+    <select id="toCurrency" class="select-style">
+
+      <option value="INR">INR</option>
+      <option value="USD">USD</option>
+      <option value="EUR">EUR</option>
+      <option value="JPY">JPY</option>
+      <option value="BGN">BGN</option>
+      <option value="CZK">CZK</option>
+      <option value="DKK">DKK</option>
+      <option value="GBP">GBP</option>
+      <option value="HUF">HUF</option>
+      <option value="PLN">PLN</option>
+      <option value="RON">RON</option>
+      <option value="SEK">SEK</option>
+      <option value="ISK">ISK</option>
+      <option value="NOK">NOK</option>
+      <option value="CHF">CHF</option>
+      <option value="HRK">HRK</option>
+      <option value="RUB">RUB</option>
+      <option value="TRY">TRY</option>
+      <option value="AUD">AUD</option>
+      <option value="BRL">BRL</option>
+      <option value="CAD">CAD</option>
+      <option value="CNY">CNY</option>
+      <option value="HKD">HKD</option>
+      <option value="IDR">IDR</option>
+      <option value="ILS">ILS</option>
+      <option value="KRW">KRW</option>
+      <option value="MXN">MXN</option>
+      <option value="MYR">MYR</option>
+      <option value="NZD">NZD</option>
+      <option value="PHP">PHP</option>
+      <option value="SGD">SGD</option>
+      <option value="THB">THB</option>
+      <option value="ZAR">ZAR</option>
+    </select>
+</div>
+
+
+  <button onclick="getCurrencyInfo()" class="button-style">Convert</button>
+
+  <div class = "result" id = "result"><p><span></span></p></div>
+
+</div>
+
+<script src="scripts.js"></script>
+
+</body>
+</html>
