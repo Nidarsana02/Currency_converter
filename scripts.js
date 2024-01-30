@@ -1,5 +1,3 @@
-// scripts.js
-
 function getCurrencyInfo() {
     console.log('getCurrencyInfo function is triggered.');
 
@@ -27,13 +25,13 @@ function getCurrencyInfo() {
 
             } else {
                 console.error('No data available for the specified currency.');
-                // Handle no data scenario
+                
                 spanElement.textContent = 'Error: No data available for the specified currency'
             }
             document.getElementById('result').classList.add('show');
         })
         .catch(error => {
             console.error('Error fetching data:', error.message);
-            // Handle error, show a user-friendly message, etc.
+            
         });
 }
